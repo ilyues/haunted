@@ -1,0 +1,14 @@
+.Icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  font-size: small;
+  cursor: pointer;
+}
+
+.Icon img {
+  width: 100px;
+}
