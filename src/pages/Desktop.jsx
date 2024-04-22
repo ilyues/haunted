@@ -16,20 +16,104 @@ function Desktop({ onHover }) {
         <Icon
           id='eulogy'
           name={'eulogy'}
-          // pic={}
-          x={10}
-          y={300}
-          hovertext={'hello'}
+          pic={'/'}
+          x={520}
+          y={170}
+          hovertext={'An important document, perhaps.'}
           onHover={onHover}
         ></Icon>
-        <Icon id='eulogy-vivia'></Icon>
+        <Icon
+          id='eulogy-vivia'
+          name='vivia.JPEG'
+          pic={'/'}
+          x={520}
+          y={270}
+          hovertext={'To go with the document?'}
+          onHover={onHover}
+        ></Icon>
 
-        <Icon id='trash'></Icon>
+        <Icon
+          id='trash'
+          name='Recycle Bin'
+          pic={'/'}
+          x={800}
+          y={500}
+          hovertext={'...'}
+          onHover={onHover}
+        ></Icon>
 
-        <Icon id='email'></Icon>
+        <Icon
+          id='email'
+          name='Inbox'
+          pic={'/'}
+          x={25}
+          y={25}
+          hovertext={'...'}
+          onHover={onHover}
+        ></Icon>
 
-        <Icon id='browser'></Icon>
+        <Icon
+          id='browser'
+          name='Internet'
+          pic={'/'}
+          x={25}
+          y={125}
+          hovertext={'...'}
+          onHover={onHover}
+        ></Icon>
+
+        <Icon
+          id='work'
+          name='Work'
+          pic={'/'}
+          x={25}
+          y={225}
+          hovertext={'...'}
+          onHover={onHover}
+        ></Icon>
+
+        <Icon
+          id='writing'
+          name='Personal Writing'
+          pic={'/'}
+          x={25}
+          y={325}
+          hovertext={'...'}
+          onHover={onHover}
+        ></Icon>
+
+        <Icon
+          id='minutes'
+          name='Minutes'
+          pic={'/'}
+          x={25}
+          y={425}
+          hovertext={'...'}
+          onHover={onHover}
+        ></Icon>
+
+        <Icon
+          id='notes'
+          name='Notes'
+          pic={'/'}
+          x={125}
+          y={25}
+          hovertext={'...'}
+          onHover={onHover}
+        ></Icon>
+
+        <Icon
+          id='photos'
+          name='Photos'
+          pic={'/'}
+          x={125}
+          y={125}
+          hovertext={'...'}
+          onHover={onHover}
+        ></Icon>
       </div>
+
+      <button className='logout-button'>Logout</button>
     </>
   );
 }

@@ -17,7 +17,7 @@ function App() {
       >
         <img id='halftone-tex' src={halftone}></img>
         <img id='screen-tex' src={screen_texture}></img>
-        {loggedIn ? (
+        {!loggedIn ? (
           <Desktop onHover={setFlavour} />
         ) : (
           <Login onHover={setFlavour} onClick={setLoggedIn} />

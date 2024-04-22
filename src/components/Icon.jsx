@@ -5,7 +5,7 @@ function Icon({ name, pic, x, y, hovertext, onHover, onClick }) {
   return (
     <div
       className='Icon'
-      style={{ top: x, left: y }}
+      style={{ top: y, left: x }}
       onMouseEnter={() => onHover(hovertext)}
       onMouseLeave={() => onHover('')}
       onClick={() => {

@@ -7,8 +7,10 @@
   color: antiquewhite;
   font-size: small;
   cursor: pointer;
+  width: 75px;
 }
 
 .Icon img {
-  width: 100px;
+  height: 30px;
+  margin: 10px;
 }
