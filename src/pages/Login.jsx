@@ -1,11 +1,19 @@
 import '../styles/Login.css';
 import React from 'react';
+import login_icon from '../assets/login/siren-user.png';
 
-function Login({ onHover, onClick }) {
+function Login({ onHover, onClick, freezeButtons }) {
   return (
     <>
       <div className='Login'>
-        {/* <img src={login_icon}></img> */}
+        <img
+          className='login-icon'
+          src={login_icon}
+          onMouseEnter={() =>
+            onHover('Looks like the previous owner of this computer.')
+          }
+          onMouseLeave={() => onHover('')}
+        ></img>
         <div className='login-username'>Siren Lin</div>
         <div className='login-fields'>
           <label className='login-label' for='pass'>
@@ -27,7 +35,16 @@ function Login({ onHover, onClick }) {
           </button>
         </div>
       </div>
-      <button className='wipe-button'>Reset Computer</button>
+      <button
+        className='wipe-button'
+        style={{ cursor: freezeButtons ? 'not-allowed' : 'pointer' }}
+        onMouseEnter={
+          freezeButtons ? null : () => onHover('Seems easy enough.')
+        }
+        onMouseLeave={() => onHover('')}
+      >
+        Reset Computer
+      </button>
     </>
   );
 }

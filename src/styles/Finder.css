@@ -1,0 +1,31 @@
+.finder-window {
+  width: 450px;
+  height: 360px;
+  background-image: url(../assets/finder.png);
+  position: relative;
+  z-index: 2;
+}
+
+/* .Finder {
+  position: relative;
+  height: 600px;
+  width: 900px;
+  display: block;
+  pointer-events: none;
+  z-index: 2;
+} */
+
+.close-finder-button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 17px;
+  height: 16px;
+
+  cursor: pointer;
+}
+
+.close-finder-button:hover {
+  background-color: rgba(0, 0, 0, 0.109);
+  border: solid 1px black;
+}

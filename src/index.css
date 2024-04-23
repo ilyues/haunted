@@ -3,6 +3,28 @@
   src: local('director'), url(./fonts/director.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'ft88';
+  src: local('ft88'), url(./fonts/FT88-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'resistance';
+  src: local('resistance'),
+    url(./fonts/resistance_generale-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'argent';
+  src: local('argent'), url(./fonts/ArgentPixelCF-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'argent-italics';
+  src: local('argent-italics'),
+    url(./fonts/ArgentPixelCF-Italic.woff) format('woff');
+}
+
 body {
   margin: 0;
   font-family: 'director';

@@ -37,8 +37,61 @@ html {
 }
 
 button {
+  animation: fade-in 5s;
   font-family: 'director';
   cursor: pointer;
+}
+
+.sticky-note {
+  animation: fade-in 5s fade-out 5s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -150px;
+  bottom: 0;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  transition: transform 1.2s ease-in-out;
+  width: 350px;
+  height: 350px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sticky-note img {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); */
+}
+
+.sticky-note:hover {
+  transform: rotate(5deg);
+}
+
+.sticky-title {
+  width: 200px;
+}
+
+.game-title {
+  font-weight: 500;
+  font-size: larger;
+  margin-bottom: 20px;
+  font-family: 'resistance';
+  /* text-transform: ; */
+}
+
+.game-subtitle {
+  /* font-size: ; */
+
+  font-family: 'argent-italics';
+  /* text-transform: uppercase; */
 }
 
 .main-screen {
