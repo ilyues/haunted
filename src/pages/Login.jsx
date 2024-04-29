@@ -66,7 +66,7 @@ function Login({ onHover, onClick, freezeButtons }) {
                 onMouseEnter={
                   freezeButtons
                     ? null
-                    : () => onHover("Who are you kidding? Let's look around")
+                    : () => onHover("Who are you kidding? Let's look around.")
                 }
                 onMouseLeave={() => onHover('')}
                 onClick={() => setResetButton(false)}

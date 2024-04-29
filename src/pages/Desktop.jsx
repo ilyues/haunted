@@ -19,7 +19,7 @@ import EmailWindow from '../components/Email';
 
 function Desktop({ onHover, onClick }) {
   const [focus, setFocus] = React.useState('desktop');
-  const [openFolder, setOpenFolder] = React.useState('email');
+  const [openFolder, setOpenFolder] = React.useState(null);
   const [openFile, setOpenFile] = React.useState(null);
 
   return (

@@ -7,15 +7,39 @@ function EmailWindow({ onHover, setFocus, setOpenFolder, setOpenFile }) {
   const [emailSelected, setEmailSelected] = React.useState(0);
   const email_previews = [
     {
-      from: 'Vivia Qiong',
+      from: 'info@shenzhenfunerals.com.cn',
+      subj: 'Service for Vivia Qiong',
+      received: '04 April, 2040',
+      content: 'thank youuu siren <3',
+    },
+    {
+      from: 'vqiong328@126.com',
       subj: 'PRINT — for tomorrow!',
       received: '',
       content: 'thank youuu siren <3',
     },
-    { from: 'Vivia Qiong', subj: '', received: '' },
-    { from: 'Vivi Qiong', subj: '', received: '' },
-    { from: '', subj: '', received: '' },
-    { from: '', subj: '', received: '' },
+    {
+      from: 'vqiong328@126.com',
+      subj: '',
+      received: '',
+      content: (
+        <>
+          <p>Dear Siren,</p>
+
+          <p>
+            I met you last night at the Strawshop gallery opening &mdash; we
+            talked but I ended up being pulled away without actually getting
+            your contact. I remember you talking about your work and I found
+            your email online
+          </p>
+
+          <p>Warmly, Vivia&#160;</p>
+        </>
+      ),
+    },
+    { from: 'vqiong328@126.com', subj: '', received: '' },
+    { from: 'vqiong328@126.com', subj: '', received: '' },
+    { from: 'vqiong328@126.com', subj: '', received: '' },
     { from: '', subj: '', received: '' },
   ];
   return (
@@ -44,13 +68,13 @@ function EmailWindow({ onHover, setFocus, setOpenFolder, setOpenFile }) {
           >
             <a href='#tabs'>Inbox</a>
           </li>
-          <li
+          {/* <li
             role='tab'
             aria-selected={openTab === 'drafts'}
             onClick={() => setOpenTab('drafts')}
           >
             <a href='#tabs'>Drafts (2)</a>
-          </li>
+          </li> */}
         </menu>
         <div className='window' role='tabpanel'>
           <div className='window-body inbox-body'>
