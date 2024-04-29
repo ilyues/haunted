@@ -25,7 +25,7 @@
     url(./fonts/ArgentPixelCF-Italic.woff) format('woff');
 }
 
-body {
+body .App {
   margin: 0;
   font-family: 'director';
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -33,6 +33,7 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: medium;
 }
 
 code {

@@ -12,7 +12,7 @@
 }
 
 .wipe-button {
-  position: relative;
+  position: absolute;
   bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -53,4 +53,32 @@ img.login-icon {
   flex-direction: column;
   align-items: center;
   /* align-items: flex-start; */
+}
+
+.window {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.App .title-bar,
+.App .window,
+.App button,
+.App input,
+.App label,
+.App option,
+.App select,
+.App table,
+.App textarea,
+.App ul.tree-view {
+  animation: none;
+  -webkit-font-smoothing: none;
+  font-family: 'director';
+}
+
+button.wipe-button {
+  animation: fade-in 5s;
 }

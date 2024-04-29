@@ -17,7 +17,7 @@ function App() {
       {showSticky ? (
         <div
           className='sticky-note'
-          onMouseEnter={() =>
+          onMouseMove={() =>
             setFlavour(
               start
                 ? 'David gave you this computer to use after you wipe all the data on it.'
@@ -29,6 +29,7 @@ function App() {
             !start
               ? () => {
                   setStart(true);
+                  setFlavour('');
                 }
               : () => {
                   setShowSticky(false);

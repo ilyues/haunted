@@ -43,7 +43,7 @@ button {
 }
 
 .sticky-note {
-  animation: fade-in 5s fade-out 5s;
+  animation: fade-in 1s fade-out 1s;
   position: absolute;
   left: 0;
   right: 0;
@@ -53,10 +53,10 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  transition: transform 1.2s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   width: 350px;
   height: 350px;
-  z-index: 5;
+  z-index: 15;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,7 @@ button {
 }
 
 .sticky-note:hover {
-  transform: rotate(5deg);
+  transform: rotate(2deg);
 }
 
 .sticky-title {
@@ -118,7 +118,7 @@ button {
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 3;
+  z-index: 10;
   width: 100%;
   height: 120%;
 
@@ -131,7 +131,7 @@ button {
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 3;
+  z-index: 10;
   width: 100%;
   height: 120%;
 
@@ -143,7 +143,7 @@ button {
   animation: fade-in 5s;
   margin-top: 20px;
   height: 100px;
-  width: 1200px;
+  width: 850px;
   color: white;
   text-align: center;
   display: flex;
