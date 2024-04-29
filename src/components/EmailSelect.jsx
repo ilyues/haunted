@@ -16,7 +16,7 @@ function EmailSelect({
         setEmailSelected(id);
       }}
     >
-      <td>{from}</td>
+      <td className='from-col'>{from}</td>
       <td>{subj}</td>
       <td>{received}</td>
     </tr>

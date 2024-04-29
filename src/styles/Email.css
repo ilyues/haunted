@@ -18,7 +18,28 @@ table {
   justify-content: center;
 }
 
+.email-metadata {
+  text-align: left;
+  max-height: 50px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 5px 10px 5px 10px;
+
+  width: 360px;
+}
 .inbox-body-text {
   padding: 10px;
   text-align: left;
+}
+
+/* table {
+  table-layout: fixed;
+} */
+
+td.from-col {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
