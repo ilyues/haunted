@@ -100,9 +100,10 @@ function Desktop({ onHover, onClick }) {
                 <p>
                   Vivia was a beloved visionary, sister, partner, and friend.
                   It&rsquo;s touching to be here with so many people whose lives
-                  Vivia touched and brightened with her own. Vivia was special,
-                  to me and to all of us, in her kindness and creativity and
-                  honest love for others.
+                  Vivia brightened with her own. Vivia was exceptional in her
+                  kindness and creativity and honest love for others, and I'm
+                  honoured to stand here as her partner in remembering her
+                  vibrant life.
                 </p>
 
                 <p>
@@ -110,27 +111,23 @@ function Desktop({ onHover, onClick }) {
                   ago, where she was performing some of her writing on opening
                   night. I spent the entire night in awe of her, her ability to
                   captivate a crowd and command attention, create laughter,
-                  communicate love. We met for coffee two weeks later, and the
-                  rest was history. We were inseparable; she was someone who I
-                  needed to be close to all the time. We moved in together a
-                  couple months after.
+                  communicate love. This night was a testament to how she
+                  navigated life: with a power to bring joy to others wherever
+                  she went. In all the time I knew her, Vivia dedicated her
+                  hours to producing art that could touch others and impact
+                  their lives. I'm sure many of you have experienced the
+                  privilege I'm describing to have known her.
                 </p>
 
                 <p>
-                  I knew Vivia better than I knew myself&mdash;she was all
-                  honest joy and light and magic. She cared deeply for others,
-                  sometimes at her own expense, and wanted so much for her loved
-                  ones to choose what was best for themselves. As another
-                  writer, she was always inspiring me, pushing and shaping my
-                  aspirations. I adored her work, and felt privileged as her
-                  partner to share in her words, to have a first preview to what
-                  was on her mind through her manuscripts. In some ways it was
-                  scary to be so vulnerable, or to see how vulnerable she was
-                  willing to be with me. She was so open; it&rsquo;s her
-                  open-ness and enthusiasm to integrate me into her life that
-                  allows me to recognise so many of you here. She was always
-                  gentle, generous, and forgiving. It has been a pleasure to be
-                  loved by her.
+                  Vivia was all honest joy and light and magic. She cared deeply
+                  for others, sometimes at her own expense, and wanted so much
+                  for her loved ones to thrive. As another writer, she was
+                  always inspiring me, pushing and shaping my aspirations. I
+                  adored her open-ness and willingness to welcome others into
+                  her world; it is Vivia who introduced me to so many of you
+                  standing here today. She was always gentle, generous, and
+                  forgiving. It has been a pleasure to be loved by her.
                 </p>
 
                 <p>
@@ -139,7 +136,7 @@ function Desktop({ onHover, onClick }) {
                   remember her contributions to the arts communities in New
                   Guangzhou and beyond, and grieve our loss of such a beloved
                   writer, friend, and lover. May she live on through our
-                  memories of her, and all her work.
+                  memories of her.
                 </p>
               </div>
             </div>
