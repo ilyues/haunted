@@ -15,6 +15,7 @@ import vivia_file from '../assets/vivia_file.png';
 import text_file from '../assets/text_file.png';
 import full_vivia_file from '../assets/full_vivia.png';
 import photo1 from '../assets/photo1.png';
+import photo2 from '../assets/photo2.png';
 import EmailWindow from '../components/Email';
 
 function Desktop({ onHover, onClick }) {
@@ -43,6 +44,66 @@ function Desktop({ onHover, onClick }) {
             </div>
           )}
 
+          {openFile === 'vivia1' && (
+            <div
+              className='window'
+              style={{ width: '327px' }}
+              onMouseEnter={() => onHover('A picture of a beautiful woman.')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div className='title-bar'>
+                <div className='title-bar-text'>IMG_0012</div>
+                <div className='title-bar-controls'>
+                  <button aria-label='Minimize'></button>
+                  <button aria-label='Maximize'></button>
+                  <button
+                    aria-label='Close'
+                    onClick={() => {
+                      onHover('');
+                      setFocus('desktop');
+                      setOpenFile(null);
+                    }}
+                  ></button>
+                </div>
+              </div>
+              <div className='window-body' style={{ margin: '0px' }}>
+                <img src={vivia_file}></img>{' '}
+              </div>
+            </div>
+          )}
+
+          {openFile === 'photo2' && (
+            <div
+              className='window window-folder-photo'
+              style={{ width: '327px' }}
+              onMouseEnter={() =>
+                onHover(
+                  'A photograph of an augmented person smashing through a police riot shield.'
+                )
+              }
+              onMouseLeave={() => onHover('')}
+            >
+              <div className='title-bar'>
+                <div className='title-bar-text'>Snapshot_0028</div>
+                <div className='title-bar-controls'>
+                  <button aria-label='Minimize'></button>
+                  <button aria-label='Maximize'></button>
+                  <button
+                    aria-label='Close'
+                    onClick={() => {
+                      onHover('');
+                      setFocus('folder');
+                      setOpenFile(null);
+                    }}
+                  ></button>
+                </div>
+              </div>
+              <div className='window-body' style={{ margin: '0px' }}>
+                <img className='window-photo' src={photo2}></img>{' '}
+              </div>
+            </div>
+          )}
+
           {openFile === 'full-vivia' && (
             <div
               className='img-file-folder'
@@ -66,7 +127,11 @@ function Desktop({ onHover, onClick }) {
             <div
               className='img-file-folder'
               style={{ width: '336px', height: '459px' }}
-              onMouseEnter={() => onHover('')}
+              onMouseEnter={() =>
+                onHover(
+                  'A photograph of an injured hand. Does it belong to the cameraperson?'
+                )
+              }
               onMouseLeave={() => onHover('')}
             >
               <img src={photo1}></img>{' '}
@@ -205,6 +270,164 @@ function Desktop({ onHover, onClick }) {
                   writer, friend, and lover. May she live on through our
                   memories of her, and all her work.
                 </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'personal1' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>
+                  Being with her made me feel like a man—she was lyrical and
+                  literary and lithe in her political existence, pretty but more
+                  intelligent than pretty, and smooth and limber enough to slip
+                  between the wrong things to say and stay feather light on the
+                  right. I was lousy and hot-glued and makeshift in my
+                  femininity. She made my edges feel filed to sinew, rough
+                  flakes, thick spider webs soldered between day-old dew. The
+                  wires made it worse, because then I was even further from her:
+                  each one a tunnel dug away from her native grace, the soft
+                  peaks our creator pinched to form her ankles. She was so good
+                  and easy to love and I was nothing like her. My abdomen a
+                  space, a dark matter adjacent to her, a shadow which didn’t
+                  replicate her shape but inverted it. My heart was moulded to
+                  contain all the harm that could be done to her.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'personal2' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>Year End, a Dragon Eating its own Tail to form an Egg</p>
+
+                <p>
+                  {' '}
+                  The train to Shanghai departs from a platform floating in the
+                  sky. The escalator moves me towards air and its the first
+                  gulps of fresh air I&rsquo;ve had this morning, even after
+                  walking to the station with suitcase in tow (and so the
+                  longest walk in human history), but it must be something about
+                  how the sun takes full-jaw bites out of the platform that
+                  renews everything to be so bright.
+                </p>
+
+                <p>
+                  My laptop is fizzling down from 8% despite me leaving it out
+                  to charge on the hotel room carpet, last thing to be packed,
+                  and it boils on how I haven&rsquo;t been able to write all
+                  week because of my reliance on technology (and failure to toss
+                  a notebook into my backpack in all the fuzz and blur of almost
+                  oversleeping the plane from Hong Kong, suitcase still face
+                  open and half filled.) But I&rsquo;ve also been writing all
+                  week, because thinking about writing is writing. Writing into
+                  the clouds, writing into things that will change shape and
+                  carry my thoughts away to places where noone speaks English,
+                  or Cantonese, or Mandarin, or the other imaginary languages of
+                  my brain.
+                </p>
+
+                <p>
+                  I&rsquo;ve been writing a lot this past year, both like this
+                  and in the more traditional sense, but meaning still feels
+                  fluid and free and escaping my words through clumsy routes. I
+                  have a romantic and intimate relationship with honesty.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'personal3' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>Citizen of the Concave Gaze</p>
+
+                <p>
+                  Your China doll, but more than a political hemisphere away
+                  from China, and a crescent sliver in negative space away from
+                  girl. And finally, doll as in placeholder face for your
+                  imaginations. Doll as in play, making light. Doll as in body,
+                  body as in length of hair and skin and if I slouch with ankles
+                  outward or the angle and grace of my wrist. Doll as in objet
+                  d&rsquo;art, perhaps related to girl. Doll as in.
+                </p>
+
+                <p>
+                  And my coming-around to the Beijing accent says I&rsquo;ll
+                  arch my tongue and round my mouth to mirror you, maybe much
+                  more barrel of a linguistic gun than tender kiss. But how can
+                  you mistake a person from one mangled metropolis for another
+                  when being born between the window reflections in the metal
+                  city screams slippery silhouette, symphonic depths, screams
+                  into Tian An Men's mythology for the first time to find no
+                  echo, no substance, no skywires skewed into question marks
+                  (future generations' curious eyes), no ocean which wanders
+                  wide across the sky and lets the free wind make love in your
+                  hair while you walk on over there. Only oppressive,
+                  landlocked, lovelocked, million-dollar history drinking the
+                  blue down its stone stairways, and sacrifice, and the
+                  collective, and silence, and you overlay all these desires
+                  onto my body. Transnational epidermis, stretched so thin by
+                  your gaze you do not even see.
+                </p>
+
+                <p>
+                  And still see too much when you look at me. You make up
+                  radical ideas in the way that &#20182; and &#22905; find
+                  themselves masculine, feminine in the visual print but are
+                  identical in the spoken word, anointed canon by my
+                  voice.&#160;
+                </p>
+
+                <p>Listen to me.&#160;</p>
+
+                <p>
+                  My cross to bear is a constellation that you can&rsquo;t see
+                  from this half of the planet, this side of globalised irises
+                  no matter how many times you roll them, the dark side of your
+                  moon.
+                </p>
+
+                <p>The hemisphere, the negative space.</p>
+
+                <p>Give me some room.</p>
               </div>
             </div>
           )}
@@ -532,47 +755,47 @@ function Desktop({ onHover, onClick }) {
               }}
             ></Icon>
             <Icon
-              id='eulogy-vivia'
-              name='vivia'
+              id='photo-2'
+              name='Snapshot_0028'
               pic={vivia_thumb}
               x={350}
               y={260}
-              hovertext={'To go with the document?'}
+              hovertext={''}
               clickable={focus === 'folder'}
               onHover={onHover}
               inFolder={true}
               onClick={() => {
-                setOpenFile('folder');
+                setOpenFile('photo2');
                 setFocus('file');
               }}
             ></Icon>
             <Icon
-              id='eulogy-vivia'
-              name='vivia'
+              id='photo-3'
+              name='Snapshot_0029'
               pic={vivia_thumb}
               x={450}
               y={260}
-              hovertext={'To go with the document?'}
+              hovertext={''}
               clickable={focus === 'folder'}
               onHover={onHover}
               inFolder={true}
               onClick={() => {
-                setOpenFile('vivia');
+                setOpenFile('photo3');
                 setFocus('file');
               }}
             ></Icon>
             <Icon
-              id='eulogy-vivia'
-              name='vivia'
+              id='photo-4'
+              name='Snapshot_0030'
               pic={vivia_thumb}
               x={550}
               y={260}
-              hovertext={'To go with the document?'}
+              hovertext={''}
               clickable={focus === 'folder'}
               onHover={onHover}
               inFolder={true}
               onClick={() => {
-                setOpenFile('vivia');
+                setOpenFile('photo4');
                 setFocus('file');
               }}
             ></Icon>
@@ -589,7 +812,7 @@ function Desktop({ onHover, onClick }) {
             />
             <Icon
               id='work1'
-              name='18_02_20XX'
+              name='Nov2038_YTTPdraft1'
               pic={file_icon}
               x={250}
               y={260}
@@ -645,7 +868,7 @@ function Desktop({ onHover, onClick }) {
             />
             <Icon
               id='personal1'
-              name='18_02_20XX'
+              name='womanhood_and_her'
               pic={file_icon}
               x={250}
               y={260}
@@ -660,7 +883,7 @@ function Desktop({ onHover, onClick }) {
             ></Icon>
             <Icon
               id='personal2'
-              name='18_02_20XX'
+              name='year_end_2038'
               pic={file_icon}
               x={350}
               y={260}
@@ -670,6 +893,21 @@ function Desktop({ onHover, onClick }) {
               inFolder={true}
               onClick={() => {
                 setOpenFile('personal2');
+                setFocus('file');
+              }}
+            ></Icon>
+            <Icon
+              id='personal3'
+              name='citizen'
+              pic={file_icon}
+              x={450}
+              y={260}
+              hovertext={'...'}
+              clickable={focus === 'folder'}
+              onHover={onHover}
+              inFolder={true}
+              onClick={() => {
+                setOpenFile('personal3');
                 setFocus('file');
               }}
             ></Icon>
@@ -825,6 +1063,10 @@ function Desktop({ onHover, onClick }) {
           hovertext={'...'}
           clickable={focus === 'desktop'}
           onHover={onHover}
+          onClick={() => {
+            setOpenFile('vivia1');
+            setFocus('file');
+          }}
         ></Icon>
 
         <Icon
@@ -836,6 +1078,10 @@ function Desktop({ onHover, onClick }) {
           hovertext={'...'}
           clickable={focus === 'desktop'}
           onHover={onHover}
+          onClick={() => {
+            setOpenFile('vivia2');
+            setFocus('file');
+          }}
         ></Icon>
 
         <Icon
@@ -847,6 +1093,10 @@ function Desktop({ onHover, onClick }) {
           hovertext={'...'}
           clickable={focus === 'desktop'}
           onHover={onHover}
+          onClick={() => {
+            setOpenFile('vivia3');
+            setFocus('file');
+          }}
         ></Icon>
 
         <Icon
@@ -858,6 +1108,10 @@ function Desktop({ onHover, onClick }) {
           hovertext={'...'}
           clickable={focus === 'desktop'}
           onHover={onHover}
+          onClick={() => {
+            setOpenFile('vivia4');
+            setFocus('file');
+          }}
         ></Icon>
 
         <Icon

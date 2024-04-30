@@ -21,5 +21,6 @@
   justify-content: center;
   text-align: center;
   overflow-wrap: break-word;
-  max-width: 70px;
+  max-width: 75px;
+  display: inline-block;
 }
