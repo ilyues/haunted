@@ -432,6 +432,207 @@ function Desktop({ onHover, onClick }) {
             </div>
           )}
 
+          {openFile === 'work1' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>Nov 01, 2038</p>
+
+                <p>
+                  National Development and Reform Commission&rsquo;s Youth
+                  Transition towards Technology Programme Begins in New
+                  Guangzhou City
+                </p>
+
+                <p>
+                  As of November 1st, 2038, the National Development and Reform
+                  Commission&rsquo;s Youth Transition towards Technology
+                  Programme begins operations in New Guangzhou City. Two major
+                  clinics and programme sites will operate out of New Guangzhou
+                  City Hospital and Liwan Women&rsquo;s Hospital. As of October
+                  2038, 153 million citizens under the age of 32 have registered
+                  to be part of the programme&rsquo;s initial rollout, 4.6
+                  million of who live in New Guangzhou City. The programme has
+                  already begun operations in Old Beijing City, Shanghai, and
+                  Qin&rsquo;xing to great success.
+                </p>
+
+                <p>
+                  The Youth Transition towards Technology Programme (YTTP) is
+                  the National Development and Reform Commission&rsquo;s most
+                  recent initiative to invigorate the Chinese economy and
+                  encourage young adults back into the essential workforce.
+                  Members of the programme gain access to exclusive and powerful
+                  technology enhancing basic skills required for the modern
+                  labour force. This includes improved senses, strength,
+                  endurance, healing, logical reasoning, language skills, and
+                  recall. These enhancements are introduced via a schedule of
+                  government-certified and approved surgeries which are safe for
+                  all citizens under 32 with no major health conditions. YTTP
+                  members are then placed into essential and stable guaranteed
+                  government jobs after the initial six-month surgery schedule
+                  is completed and the enhancements have stabilised.
+                </p>
+
+                <p>
+                  Announced in 2037, the programme has been endorsed by multiple
+                  government officials, including Sun Wuyun of the State
+                  Council. Lin Wenqi, the director of YTTP, claimed in the 2038
+                  NDRC annual press conference that the YTTP will effectively
+                  address the gap in labour created by the nation&rsquo;s ageing
+                  population.
+                </p>
+
+                <p>
+                  To learn more about the programme and register interest,
+                  please be directed to the National Development and Reform
+                  Commission&rsquo;s official website [hyperlink].
+                </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'work2' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>February 10, 2040</p>
+
+                <p>
+                  Mass Demonstrations in New Guangzhou City Square Disrupt New
+                  Year&rsquo;s Travel
+                </p>
+
+                <p>
+                  A series of coordinated protests have shut down major train
+                  stations in New Guangzhou City on the morning of February 10,
+                  2040, wreaking havoc during the busiest travel season of the
+                  year.
+                </p>
+
+                <p>
+                  Protestors voiced opposition to the Youth Transition towards
+                  Technology Programme (YTTP) which marked two full years of
+                  operation last July. Recent public review of the National
+                  Development and Reform Commission&rsquo;s policies for 2040
+                  show that all funding originally intended for civic arts and
+                  culture initiatives is being divested into YTTP. This explicit
+                  announcement, in addition to the mass shutting down of private
+                  galleries, theatres, and creative institutions nationwide over
+                  the course of the past two years, has suggested at an ulterior
+                  motive.
+                </p>
+
+                <p>
+                  &ldquo;It&rsquo;s all just confirmation that the arts sectors
+                  and communities are actively being destroyed by the
+                  state,&rdquo; one anonymous protestor shared. &ldquo;YTTP is
+                  another method for them to dictate where people choose to
+                  work, along with all the other insidious forms of control the
+                  surgeries claim on your body.&rdquo;
+                </p>
+
+                <p>
+                  Power outages have been observed at Guangzhou South Railway
+                  Station, Guangzhou Railway Station,&#160;Guangzhou East
+                  Railway Station, Guangzhou North Railway Station, and
+                  Guangzhou West Railway Station, beginning around 8:00AM.
+                </p>
+
+                <p>
+                  Despite reports by government news sources that the
+                  demonstrations have resulted in hundreds of casualties, the
+                  Herald&rsquo;s ground reporters cannot verify these
+                  statistics.
+                </p>
+
+                <p>
+                  Responsibility for these demonstrations has been claimed by
+                  resistance organisations Mayflower and Re/New Guangzhou, both
+                  of which allegedly have stealth agents within YTTP to provide
+                  information on YTTP technology and enhancement software.
+                </p>
+
+                <p>
+                  New Guangzhou citizens are advised to take private
+                  transportation or find alternative public transit options
+                  (buses, trams) at this time while the train stations are out
+                  of operation.{' '}
+                </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'work3' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>March [], 2040</p>
+
+                <p>
+                  Tensions Reach Apex Between National Development and Reform
+                  Commission and Resistance Groups
+                </p>
+
+                <p>
+                  Despite the dubious tactics of Mayflower and other branching
+                  resistance collectives in expressing their opposition to the
+                  programme, YTTP has attracted negative attention and is poorly
+                  regarded in the Chinese public consciousness. In response to
+                  multiple demonstrations last August and September in front of
+                  programme director Lin Wenqi’s office and home in Sunde, the
+                  NDRC has made no comments on the increase in arrests
+                  surrounding YTTP members, repeated reports of forced labour,
+                  alleged malfunctions, and general lack of safety and
+                  predictability in the behaviour of citizens who have undergone
+                  YTTP-related operations. Critics have also long expressed
+                  discontent with the correlation between advancement within
+                  YTTP and the teardown of community spaces, private
+                  organisations, and non-profits in the arts sector, pointing
+                  towards a suspected government objective to bolster the
+                  economy through funnelling young workers towards manual labour
+                  and civic jobs. As the arts disappear from New Guangzhou and
+                  other major cities as ‘non-essential’ activities in the eyes
+                  of the CCP, this causative relationship becomes less
+                  conjecture and emerges as clarifying truth.
+                </p>
+              </div>
+            </div>
+          )}
+
           {openFile === 'minutes1' && (
             <div
               className='text-file-folder'
@@ -827,7 +1028,7 @@ function Desktop({ onHover, onClick }) {
             ></Icon>
             <Icon
               id='work2'
-              name='18_02_20XX'
+              name='Feb2040_CNYDemonstrations_draft1'
               pic={file_icon}
               x={350}
               y={260}
@@ -842,7 +1043,7 @@ function Desktop({ onHover, onClick }) {
             ></Icon>
             <Icon
               id='work3'
-              name='18_02_20XX'
+              name='Mar2040_Conflict'
               pic={file_icon}
               x={450}
               y={260}
@@ -1233,7 +1434,7 @@ function Desktop({ onHover, onClick }) {
             setFocus('folder');
           }}
         ></Icon>
-
+        {/* 
         <Icon
           id='documents'
           name='Documents'
@@ -1247,7 +1448,7 @@ function Desktop({ onHover, onClick }) {
             setFocus('folder');
           }}
           onHover={onHover}
-        ></Icon>
+        ></Icon> */}
       </div>
 
       <button
