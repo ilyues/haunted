@@ -648,11 +648,71 @@ function Desktop({ onHover, onClick }) {
                 }}
               ></div>
               <div className='text-file-content'>
-                FEBRUARY 18 20XX
-                <p>Announcements</p>
-                <p>In attendance</p>
-                <p>Guangzhou Opera House demonstration - March 7</p>
-                <p>Press coverage</p>
+                FEBRUARY 18 2040
+                <p>
+                  Announcements
+                  <ul>
+                    <li>Recap of New Year demonstrations</li>
+                    <li>Govt concessions</li>
+                    <li>Updated vitamin regimen</li>
+                    <li>R&D report</li>
+                  </ul>
+                </p>
+                <p>
+                  In attendance{' '}
+                  <ul>
+                    <li>██████ ████</li>
+                    <li>██████████ ██</li>
+                    <li>██ ██████████</li>
+                    <li>██████ ████████</li>
+                    <li>███ ██████████</li>
+                    <li>█████ ███████████</li>
+                    <li>███ ██████████</li>
+                    <li>█████ ██████████</li>
+                    <li>███ █████████</li>
+                    <li>████ ██████</li>
+                    <li>███ ████████</li>
+                    <li>████ █████████</li>
+                  </ul>
+                </p>
+                <p>
+                  Guangzhou Opera House demonstration
+                  <ul>
+                    <li>From 6AM, March 7 outside main (North) entrance </li>
+                    <li>
+                      Responsibilities:
+                      <ul>
+                        <li>Security/physical reinforcements</li>
+                        <li>Delivery of supplies</li>
+                        <li>
+                          Protestor anonymity/editing and deletion of official
+                          surveillance data
+                        </li>
+                        <li>
+                          Internal recordings to be released to journalists
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+                <p>
+                  Press coverage:
+                  <ul>
+                    <li>New Guangdong Journal</li>
+                    <li>Guangzhou Herald</li>
+                    <li>Liwan Times</li>
+                    <li>Liaoning Daily</li>
+                  </ul>
+                </p>
+                <p>
+                  Next Objectives:
+                  <ul>
+                    <li>Address by Lin Wenqi</li>
+                    <li>
+                      Demands for funding returned to community arts centres
+                    </li>
+                  </ul>
+                </p>
               </div>
             </div>
           )}
@@ -715,19 +775,309 @@ function Desktop({ onHover, onClick }) {
                   table i was just suddenly so unsure of myself.
                 </p>
 
-                <p>it</p>
-
                 <p>
-                  i feel a little light-headed and drowsy probably still from
-                  all the anti
+                  it’s weird to look in the mirror too, because i feel
+                  different, but everything looks the same. they do a good job
+                  of the skin graft over the metal panel, like i can still see
+                  the capillaries intact underneath. nothing to clue anyone in,
+                  except sometimes when i stretch my arms the click sounds a
+                  little bit too much like a clang that only i can hear. and the
+                  mole on the inside of my wrist. i’ve had it since i was an
+                  infant, but they installed something in my forearm, and when i
+                  woke up it was gone.
                 </p>
 
                 <p>
-                  i was probably knocked out for six hours straight, although
-                  they were pretty upfront about it, so i already took the day
-                  off in advance. they told me i shouldn&rsquo;t drive after all
-                  the operations, but the new city hospital is so goddamn far
-                  from tianhe, and i am not paying for a taxi today.
+                  it’s supposed to feel empowering, to steal government
+                  resources right out from under their nose by transporting it
+                  in my own body. but it’s hard to feel that way when the
+                  reality is i was trapped by nurses on all sides and having the
+                  sinking feeling that maybe letting them modify the body that
+                  carries me through this life wasn’t the right choice to make.
+                  it’s too late now.
+                </p>
+
+                <p>
+                  i feel a little light-headed and drowsy probably still from
+                  all the anaesthetic. i was probably knocked out for six hours
+                  straight, although they were pretty upfront about it, so i
+                  already took the day off in advance. they told me i shouldn’t
+                  drive after all the operations, but the new city hospital is
+                  so goddamn far from tianhe, and i am not paying for a taxi
+                  today.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'note2' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>november 28, 2039</p>
+
+                <p>
+                  i went in for the scheduled two week checkup. i’m not sure
+                  what else to write down — david said that we’d only start the
+                  operations at mayflower after the first two yttp ones, because
+                  after that they won’t touch the mainframe anymore. i don’t
+                  know how mayflower does their operations without the yttp
+                  surgeons noticing, but i guess they have their own r&d
+                  department as well that’s racing the govt tech.
+                </p>
+
+                <p>
+                  mayflower calls their operations vitamins, i think because
+                  they’re so frequent. i don’t know much about them; david said
+                  that they actually only need to touch the hardware the first
+                  time, and then afterwards it’ll all be software patches. i
+                  hope it’s true. i’m exhausted by operations and tests, and
+                  it’s hard to hide at work. i think it’ll be disclosed to them
+                  eventually, but i’m going to hold off if i can help it.
+                </p>
+
+                <p>
+                  vivia isn’t happy that i’m going through with the programme,
+                  even now that i’ve really committed. i still don’t understand
+                  why she disapproves, when she was the one who brought me into
+                  mayflower in the first place. i don’t see why she can’t be
+                  pleased that i’m actually contributing to the cause that she
+                  introduced me to. it feels like she won’t let me do more, even
+                  though she knows i feel like i’m not doing enough.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'note3' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>december 12, 2039</p>
+
+                <p>it feels so weird oh god</p>
+
+                <p>
+                  they added a lot of the sensory augmentations, things like
+                  heightened sensitivity with touch and sound, and they said
+                  it’d take a little while for my mind to regulate the incoming
+                  sensations again, but right now it just feels like everything
+                  is so loud and even if not painful to touch i just don’t want
+                  to be touched at all. i wonder if things will feel different,
+                  if other things, or other people will sound smell taste
+                  different to me.
+                </p>
+
+                <p>
+                  and then also just having essentially, thermometers and
+                  odometers and whatever else measuring whatever else wired in
+                  my brain? i’m still getting used to having so much information
+                  and pushing it aside so i don’t get distracted by it all
+                  constantly. i can’t focus on work today at all. it’s 5.3
+                  celsius out right now, and my body is telling me this as an
+                  objective fact. isn’t there something crazy about this?
+                </p>
+
+                <p>
+                  they asked if they could shave the side of my head and cut my
+                  hair so it’s easier to access the spot they insert the cord to
+                  install patches, and when i saw myself in the mirror the first
+                  thought i had was how different i looked from her. a mix of
+                  dread and relief imagining her standing next to me.
+                </p>
+
+                <p>
+                  it’s hard not to compare myself to her. isn’’t love a
+                  negotiation of how much of my time, mind, body belongs to her?
+                </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'note4' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>january 14, 2040</p>
+
+                <p>
+                  today they finally added some of the intellectual
+                  enhancements. it’s hard to tell if my memory is any better
+                  since it doesn’t apply to old memories, only new ones. i guess
+                  the things the nurse told me post-op today seem a little
+                  sharper. she said that i might experience some nausea for the
+                  first three days, but it’s a normal side effect and i should
+                  still be able to go to work.
+                </p>
+
+                <p>
+                  when i was leaving the hospital lobby mom called me out of the
+                  blue. in the middle of the conversation she paused and said
+                  that i sounded different. i thought she meant the pitch of my
+                  voice, but she corrected me and said it was my vocabulary. i
+                  was interjecting less english words into my mandarin, and
+                  using words she’d never heard me say before. i knew that
+                  language abilities were one of the changes, but i didn’t
+                  understand how that could manifest until now. i went home
+                  after and read one of the japanese textbooks yuchen left at my
+                  place from our university days, and the fluency was like
+                  flying. i always thought of myself as bilingual, as being not
+                  fully chinese. what does this make me now?
+                </p>
+
+                <p>
+                  i wonder if these changes to my brain will make me a better
+                  writer. can someone who doesn’t have the enhancements, like
+                  vivia, parse things, create, think less effectively than i can
+                  now? is that a terrible thing to wonder? i think a worse,
+                  creeping fear is that it will diminish my ability to think for
+                  myself. are they putting political ideas in my head already?
+                  is that what mayflower is going to do at my next vitamin—will
+                  i just be a vessel bouncing between ideological drugs? do i
+                  care that ideas are being put in my head really, as long as
+                  they’re not unoriginal and boring, and make me a better writer
+                  in the long run?
+                </p>
+
+                <p>is that so terrible to wonder?</p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'note5' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>february 22, 2040</p>
+
+                <p>
+                  today they upped my physical strength, except they must’ve
+                  done it wrong because it malfunctioned. when i called to tell
+                  them they fed me through tubes of call centres just to make a
+                  report that i feel like won’t go anywhere. i’ve texted david
+                  about it but he hasn’t replied but i don’t want to wait until
+                  i see him sunday if it’s a real problem
+                </p>
+
+                <p>which of course it is, a real problem</p>
+
+                <p>
+                  i had barely been home for an hour after my appointment when
+                  vivia came over, with all her new manuscripts in hand, and i
+                  was tired and she was asking me to read them, and my arm felt
+                  strange and i hit her in the face. but it must’ve been an
+                  accident, and i keep replaying the moment over and over,
+                  because maybe i felt some spark in my arm when i move it to
+                  touch her. i know i know i know i haven’t been feeling the
+                  most honest or good or supportive, because she got the grant
+                  lately for her debut play at the opera house, and something
+                  about it has been gnawing at me. it’s not jealousy, but it’s a
+                  feeling i can’t describe. but i’ve been searching through my
+                  memory for the evidence that it wasn’t just me, it was yttp,
+                  it was the government, it was mayflower, it just wasn’t me.
+                </p>
+
+                <p>
+                  and she says it’s fine, and no more apologies can change
+                  anything, but i’m sitting here feeling like a half-loaded gun
+                  and
+                </p>
+
+                <p>
+                  agshliuargh;qRIOqorfhwea;a’sksa i just don’t know, don’t feel
+                  in control of my body
+                </p>
+              </div>
+            </div>
+          )}
+
+          {openFile === 'note6' && (
+            <div
+              className='text-file-folder'
+              onMouseEnter={() => onHover('')}
+              onMouseLeave={() => onHover('')}
+            >
+              <div
+                className='close-finder-button'
+                onClick={() => {
+                  setOpenFile(null);
+                  onHover('');
+                  setFocus('folder');
+                }}
+              ></div>
+              <div className='text-file-content'>
+                <p>march 6, 2040</p>
+
+                <p>
+                  one interesting feature that has been rumoured amongst the
+                  public (although i knew—david had confirmed that some other
+                  mayflower agents already have this installed) was recording
+                  and playback. through my senses, i mean. they didn’t give me
+                  much information on where the data is stored and how to access
+                  it, which makes me think it’s being sent directly to yttp, but
+                  i’m pretty sure mayflower has technology to intercept it and
+                  replace those records with dummy data.
+                </p>
+
+                <p>
+                  it’s supposed to be a feature i can turn on at will, like a
+                  camera or mic. i think i’ve been able to take a few standalone
+                  pictures, but i’m not sure. it’s like there’s a feeling in my
+                  chest, or my head, or… i don’t know. i haven’t been feeling
+                  the most in touch with my body recently, especially with these
+                  other… entities interfering with it, good or bad. but then
+                  there’s this almost shutter-like click in my head, and i don’t
+                  know if it’s a real physical sound pressing waves into the air
+                  or if it’s just a loud part of my imagination, and the
+                  singular frame of view through my eyes in that moment becomes
+                  burning crisp in my memory, more than any other moment
+                  surrounding it, so i think it worked. this could come in handy
+                  with my articles and reporting actually—i was thinking of
+                  telling my editor soon.
                 </p>
               </div>
             </div>
@@ -1125,7 +1475,7 @@ function Desktop({ onHover, onClick }) {
             />
             <Icon
               id='minutes1'
-              name='18_02_20XX'
+              name='18_02_2040'
               pic={file_icon}
               x={250}
               y={260}
@@ -1138,9 +1488,9 @@ function Desktop({ onHover, onClick }) {
                 setFocus('file');
               }}
             ></Icon>
-            <Icon
+            {/* <Icon
               id='minutes2'
-              name='18_02_20XX'
+              name='04_03_2040'
               pic={file_icon}
               x={350}
               y={260}
@@ -1152,22 +1502,7 @@ function Desktop({ onHover, onClick }) {
                 setOpenFile('minutes2');
                 setFocus('file');
               }}
-            ></Icon>
-            <Icon
-              id='minutes3'
-              name='18_02_20XX'
-              pic={file_icon}
-              x={450}
-              y={260}
-              hovertext={'...'}
-              clickable={focus === 'folder'}
-              onHover={onHover}
-              inFolder={true}
-              onClick={() => {
-                setOpenFile('minutes3');
-                setFocus('file');
-              }}
-            ></Icon>
+            ></Icon> */}
           </>
         )}
 
@@ -1211,7 +1546,7 @@ function Desktop({ onHover, onClick }) {
             ></Icon>
             <Icon
               id='note3'
-              name='18_02_20XX'
+              name='22_02_2040'
               pic={notes_icon}
               x={450}
               y={260}
