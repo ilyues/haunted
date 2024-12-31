@@ -16,6 +16,13 @@ import text_file from '../assets/text_file.png';
 import full_vivia_file from '../assets/full_vivia.png';
 import photo1 from '../assets/photo1.png';
 import photo2 from '../assets/photo2.png';
+import vivia1_file from '../assets/vivia1_file.jpg';
+import vivia1_thumb from '../assets/icons/vivia1.png';
+import vivia2_thumb from '../assets/icons/vivia1.png';
+import vivia3_thumb from '../assets/icons/vivia1.png';
+import vivia4_thumb from '../assets/icons/vivia1.png';
+import ss1_thumb from '../assets/icons/ss1_thumb.png';
+import ss2_thumb from '../assets/icons/ss2_thumb.png';
 import EmailWindow from '../components/Email';
 
 function Desktop({ onHover, onClick }) {
@@ -48,7 +55,7 @@ function Desktop({ onHover, onClick }) {
             <div
               className='window'
               style={{ width: '327px' }}
-              onMouseEnter={() => onHover('A picture of a beautiful woman.')}
+              onMouseEnter={() => onHover('She seems to be giving a talk.')}
               onMouseLeave={() => onHover('')}
             >
               <div className='title-bar'>
@@ -67,7 +74,7 @@ function Desktop({ onHover, onClick }) {
                 </div>
               </div>
               <div className='window-body' style={{ margin: '0px' }}>
-                <img src={vivia_file}></img>{' '}
+                <img className='window-photo' src={vivia1_file}></img>{' '}
               </div>
             </div>
           )}
@@ -1293,7 +1300,7 @@ function Desktop({ onHover, onClick }) {
             <Icon
               id='photo-1'
               name='Snapshot_0027'
-              pic={vivia_thumb}
+              pic={ss1_thumb}
               x={250}
               y={260}
               hovertext={''}
@@ -1308,7 +1315,7 @@ function Desktop({ onHover, onClick }) {
             <Icon
               id='photo-2'
               name='Snapshot_0028'
-              pic={vivia_thumb}
+              pic={ss2_thumb}
               x={350}
               y={260}
               hovertext={''}
@@ -1320,7 +1327,7 @@ function Desktop({ onHover, onClick }) {
                 setFocus('file');
               }}
             ></Icon>
-            <Icon
+            {/* <Icon
               id='photo-3'
               name='Snapshot_0029'
               pic={vivia_thumb}
@@ -1349,7 +1356,7 @@ function Desktop({ onHover, onClick }) {
                 setOpenFile('photo4');
                 setFocus('file');
               }}
-            ></Icon>
+            ></Icon> */}
           </>
         )}
 
@@ -1593,7 +1600,7 @@ function Desktop({ onHover, onClick }) {
         <Icon
           id='vivia1'
           name='vivia1'
-          pic={'/'}
+          pic={vivia1_thumb}
           x={800}
           y={25}
           hovertext={'...'}
@@ -1604,51 +1611,51 @@ function Desktop({ onHover, onClick }) {
             setFocus('file');
           }}
         ></Icon>
-
+        {/* 
         <Icon
           id='vivia2'
           name='vivia2'
-          pic={'/'}
+          pic={vivia2_thumb}
           x={800}
           y={125}
           hovertext={'...'}
           clickable={focus === 'desktop'}
           onHover={onHover}
           onClick={() => {
-            setOpenFile('vivia2');
-            setFocus('file');
+            // setOpenFile('vivia2');
+            // setFocus('file');
           }}
         ></Icon>
 
         <Icon
           id='vivia3'
           name='vivia3'
-          pic={'/'}
+          pic={vivia3_thumb}
           x={800}
           y={225}
           hovertext={'...'}
           clickable={focus === 'desktop'}
           onHover={onHover}
           onClick={() => {
-            setOpenFile('vivia3');
-            setFocus('file');
+            // setOpenFile('vivia3');
+            // setFocus('file');
           }}
         ></Icon>
 
         <Icon
           id='vivia4'
           name='vivia4'
-          pic={'/'}
+          pic={vivia4_thumb}
           x={800}
           y={325}
           hovertext={'...'}
           clickable={focus === 'desktop'}
           onHover={onHover}
           onClick={() => {
-            setOpenFile('vivia4');
-            setFocus('file');
+            // setOpenFile('vivia4');
+            // setFocus('file');
           }}
-        ></Icon>
+        ></Icon> */}
 
         <Icon
           id='trash'
